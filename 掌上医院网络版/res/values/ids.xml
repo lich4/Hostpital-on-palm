@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="splash" />
+    <item type="id" name="image_1" />
+    <item type="id" name="image_2" />
+    <item type="id" name="image_3" />
+    <item type="id" name="image_4" />
+    <item type="id" name="image_5" />
+    <item type="id" name="center" />
+    <item type="id" name="news_center_text" />
+    <item type="id" name="shortcuts_text" />
+</resources>

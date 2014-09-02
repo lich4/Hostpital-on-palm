@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_relativelayout_header" 
+  	android:layout_width="fill_parent" 
+  	android:layout_height="40dip"
+  	android:background="@color/themecolor">
+  	
+    <ImageView
+    	android:id="@+id/main_head_logo"
+  		android:layout_width="40dip"
+		android:layout_height="40dip"
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip"
+		android:paddingTop="2dip"
+		android:paddingBottom="2dip"
+		android:layout_centerVertical="true"
+		android:layout_alignParentLeft="true"
+		android:scaleType="fitXY"
+		android:src="@drawable/drawer_toggle"/>
+    
+	<ImageView 
+        android:id="@+id/main_head_title"
+        android:src="@drawable/main_title"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:padding="5dip"
+        android:scaleType="fitXY"
+        android:layout_width="100dip"
+		android:layout_height="50dip"/>
+	
+   	<ProgressBar 
+		android:id="@+id/main_head_progress" 
+		style="@style/loading_small"
+		android:layout_toRightOf="@id/main_head_title"
+		android:layout_centerVertical="true"
+		android:layout_marginLeft="5.0dip"
+		android:visibility="gone"/>
+    
+    <ImageView
+    	android:id="@+id/main_head_loginbutton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:padding="10dip"
+        android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/frame_icon_account"/>
+
+    <ImageView
+        android:id="@+id/main_head_searchbutton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_centerVertical="true"
+        android:padding="10dip"
+        android:layout_toRightOf="@+id/main_head_logo"
+        android:src="@drawable/frame_icon_search" />
+    	
+</RelativeLayout>

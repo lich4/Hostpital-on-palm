@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_user_table_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginTop="5.0dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginLeft="5.0dip"
+                android:text="名称："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5.0dip"
+                android:text="content"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginLeft="5.0dip"
+                android:text="科室："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_keshi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5.0dip"
+                android:text="content"
+                android:textStyle="bold"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+            
+            <Button 
+                android:id="@+id/listitem_guahao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="预约"
+                android:textSize="@dimen/text_size_10"
+				android:layout_marginLeft="5.0dip"/>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+			
+            <ScrollView
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:scrollbars="vertical" 
+	            android:fadingEdge="vertical">
+	            <TextView
+	                android:id="@+id/listitem_description"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5.0dip"
+	                android:layout_marginTop="5.0dip"
+	                android:text="content"
+	                android:maxLines="6"
+	                android:textColor="#ff000000"
+	                android:textSize="@dimen/text_size_16"/>
+	        </ScrollView>
+ 
+        </LinearLayout>
+     
+    </TableLayout>
+
+</LinearLayout>

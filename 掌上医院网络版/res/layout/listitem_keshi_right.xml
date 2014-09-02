@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	
+    <cn.edu.nju.zsyy.controls.FontyTextView 
+        android:id="@+id/listitem_title" 
+        android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     	android:textStyle="bold"
+     	android:textSize="@dimen/text_size_15"
+     	android:textColor="@color/listitem_black"
+     	android:singleLine="true"/>
+	
+    <cn.edu.nju.zsyy.controls.FontyTextView 
+        android:id="@+id/listitem_summary" 
+        android:layout_width="fill_parent" 
+     	android:layout_height="wrap_content"
+     	android:textSize="@dimen/text_size_10"
+     	android:textColor="@color/listitem_gray"
+     	android:maxLines="6"/>   
+    
+</LinearLayout>

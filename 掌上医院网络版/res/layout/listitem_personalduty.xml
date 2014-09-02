@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_user_table_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="姓名："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_doctorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:textStyle="bold"
+                android:text="崔学范"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="科室："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_keshi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:textStyle="bold"
+                android:text="呼吸内科"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="日期："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:textStyle="bold"
+                android:text="2014-04-11"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+            
+        </LinearLayout>
+  
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="星期："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:textStyle="bold"
+                android:text="星期五"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>            
+            
+        </LinearLayout>
+      
+		<ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_marginTop="5.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/login_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="午别："
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>
+
+            <TextView
+                android:id="@+id/listitem_noon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:textStyle="bold"
+                android:text="上午"
+                android:textColor="#ff000000"
+                android:textSize="@dimen/text_size_16"/>            
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+	        <Button
+	            android:id="@+id/appointment"
+	            android:layout_width="fill_parent"
+	            android:layout_height="30dip"
+	            android:gravity="center"
+	            android:background="@drawable/login_btn_selector"
+	            android:text="预约"
+	            android:textSize="@dimen/text_size_15" />
+        
+		</LinearLayout>
+	        
+    </TableLayout>
+
+</LinearLayout>

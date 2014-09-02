@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/indicator" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/indicator" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <cn.edu.nju.zsyy.controls.FontyTextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@+id/group_name" android:paddingTop="@dimen/group_top_bottom_margin" android:paddingBottom="@dimen/group_top_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/indicator" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/expandable" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

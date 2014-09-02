@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:orientation="vertical" 
+   	android:layout_width="fill_parent" 
+   	android:layout_height="fill_parent">
+   	
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top">
+		
+	   	<LinearLayout 
+	   	    android:id="@+id/rootll"
+			android:layout_width="fill_parent" 
+	   		android:layout_height="35.0dip" 
+	   		android:orientation="horizontal" 
+	   		android:gravity="center_vertical">
+
+	       	<Button
+	       	    android:id="@+id/jianjie"
+	       	    style="@style/frame_button"
+	       	    android:layout_width="match_parent"
+	       	    android:layout_height="match_parent"
+	       	    android:text="医院简介" />
+
+	       	<ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/frame_button_cutline"/>
+
+			<Button
+			    android:id="@+id/zhongdianzhuanke"
+			    style="@style/frame_button"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:text="科室介绍" />
+
+			<ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/frame_button_cutline"/>
+
+			<Button
+			    android:id="@+id/mingyidaquan"
+			    style="@style/frame_button"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:text="专家介绍" />
+
+		</LinearLayout>
+
+	   	<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="3dip"
+		    android:layout_alignBottom="@id/rootll">	   	    
+			<ImageView
+			    android:id="@+id/iv_bottom_line"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:scaleType="fitXY"
+			    android:src="@color/themecolor" />
+		
+		</RelativeLayout>
+		
+	</RelativeLayout>
+    
+	<LinearLayout
+	    android:id="@+id/lcontent"
+		android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.0">
+		
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/vPager"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:flipInterval="30"
+	        android:persistentDrawingCache="animation"/>
+	
+    </LinearLayout>
+    
+</LinearLayout>

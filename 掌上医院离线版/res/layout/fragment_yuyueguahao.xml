@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top">
+    
+	    <LinearLayout
+	        android:id="@+id/rootll"
+	        android:layout_width="fill_parent"
+	        android:layout_height="35.0dip"
+	        android:gravity="center_vertical"
+	        android:orientation="horizontal" >
+	
+	        <Button
+	            android:id="@+id/putongguahao"
+	            style="@style/frame_button"
+	            android:layout_width="match_parent"
+	       	    android:layout_height="match_parent"
+	            android:text="普通挂号" />
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/frame_button_cutline" />
+	
+	        <Button
+	            android:id="@+id/zhuanjiaguahao"
+	            style="@style/frame_button"
+	            android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+	            android:text="专家挂号" />
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/frame_button_cutline" />
+	
+	        <Button
+	            android:id="@+id/gaojizhuanjiaguahao"
+	            style="@style/frame_button"
+	            android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+	            android:text="高级专家" />
+	
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="fill_parent"
+	            android:background="@drawable/frame_button_cutline" />
+	
+	        <Button
+	            android:id="@+id/zhuanbingzhuankeguahao"
+	            style="@style/frame_button"
+	            android:text="专病专科" />
+	        
+	    </LinearLayout>
+
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="3dip"
+		    android:layout_alignBottom="@id/rootll">	   	    
+			<ImageView
+			    android:id="@+id/iv_bottom_line"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:scaleType="fitXY"
+			    android:src="@color/themecolor" />
+		
+		</RelativeLayout>
+	    
+	</RelativeLayout>
+		
+    <LinearLayout
+        android:id="@+id/lcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/bigclass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:layout_weight="1"
+                android:textSize="10sp" />
+
+            <Spinner
+                android:id="@+id/smallclass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="20dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dip"
+                android:layout_weight="0"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shangwu" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dip"
+                    android:layout_weight="1"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/xiawu" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周一" />
+
+                <Button
+                    android:id="@+id/monday_morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#44FF0000" />
+
+                <Button
+                    android:id="@+id/monday_afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#77FF0000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周二" />
+
+                <Button
+                    android:id="@+id/tuesday_morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#88EEAA44" />
+
+                <Button
+                    android:id="@+id/tuesday_afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#DDEEAA44" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周三" />
+
+                <Button
+                    android:id="@+id/wednesday_morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#88FFFF00" />
+
+                <Button
+                    android:id="@+id/wednesday_afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周四" />
+
+                <Button
+                    android:id="@+id/thursday_morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#8800FF00" />
+
+                <Button
+                    android:id="@+id/thursday_afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#FF00FF00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周五" />
+
+                <Button
+                    android:id="@+id/friday_morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#440000FF" />
+
+                <Button
+                    android:id="@+id/friday_afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#660000FF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="周六" />
+
+                <Button
+                    android:id="@+id/saturday_morning"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#44FF00FF" />
+
+                <Button
+                    android:id="@+id/saturday_afternoon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#66FF00FF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

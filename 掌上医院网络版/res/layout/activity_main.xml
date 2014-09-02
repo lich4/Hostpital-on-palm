@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+    
+	<include
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/main_header" />
+    
+    <android.support.v4.widget.DrawerLayout 
+        android:id="@+id/drawer_layout" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <RelativeLayout 
+            android:id="@+id/whole_interface" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+            
+			<FrameLayout 
+			    android:id="@+id/container" 
+			    android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent"/>
+	        
+		</RelativeLayout>
+		    
+	    <fragment
+            android:id="@+id/navigation_drawer"
+            android:name="cn.edu.nju.zsyy.drawer.NavigationDrawerFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"/>
+
+	</android.support.v4.widget.DrawerLayout>
+	    
+</LinearLayout>

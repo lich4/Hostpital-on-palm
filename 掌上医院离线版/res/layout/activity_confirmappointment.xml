@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/logindialog_space" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+    <ScrollView 
+    	android:id="@+id/login_scrollview" 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_centerInParent="true"
+    	android:paddingTop="14.0dip" 
+    	android:paddingLeft="14.0dip" 
+    	android:paddingRight="14.0dip" 
+    	android:scrollbars="none" >
+        <ViewSwitcher 
+        	android:id="@+id/logindialog_view_switcher" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content">
+            <RelativeLayout 
+            	android:layout_width="fill_parent" 
+            	android:layout_height="fill_parent"
+            	android:background="@drawable/login_bg" 
+            	android:paddingTop="20.0dip"
+            	android:paddingBottom="20.0dip" >
+
+                <TableLayout
+                    android:id="@+id/login_user_table"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/login_user_table_bg"
+                    android:orientation="vertical" >
+
+                    <TextView  
+                        android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginTop="10dip"
+                     	android:gravity="center"
+                     	android:textSize="20sp" 
+                     	android:textColor="#ff000000" 
+                     	android:text="您将要预约的信息如下："/>
+                    
+                    <ImageView 
+	                    android:layout_width="fill_parent" 
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="5.0dip" 
+	                    android:layout_marginLeft="2.0dip" 
+	                    android:layout_marginRight="2.0dip" 
+	                    android:src="@drawable/login_line" 
+	                    android:scaleType="fitXY" />
+                    
+                    <LinearLayout 
+                    	android:id="@+id/login_uly"
+                     	android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginLeft="10dip"
+                     	android:layout_marginTop="10dip">
+                        <TextView  
+	                         android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="2"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="日期" />
+                        <TextView  
+                             android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="1"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="2014-04-14 星期一 " />
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                    	android:id="@+id/login_uly"
+                     	android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginLeft="10dip"
+                     	android:layout_marginTop="10dip">
+                        <TextView  
+	                         android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="2"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="午别" />
+                        <TextView  
+                             android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="1"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="上午" />
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                    	android:id="@+id/login_uly"
+                     	android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginLeft="10dip"
+                     	android:layout_marginTop="10dip">
+                        <TextView  
+	                         android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="2"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="预约时段" />
+                        <TextView  
+                             android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="1"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="------" />
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                    	android:id="@+id/login_uly"
+                     	android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginLeft="10dip"
+                     	android:layout_marginTop="10dip">
+                        <TextView  
+	                         android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="2"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="科室" />
+                        <TextView  
+                             android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="1"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="呼吸内科" />
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                    	android:id="@+id/login_uly"
+                     	android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginLeft="10dip"
+                     	android:layout_marginTop="10dip"
+                     	android:layout_marginBottom="10dip">
+                        <TextView  
+	                         android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="2"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="号别" />
+                        <TextView  
+                             android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="1"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="专科号(普通门诊)" />
+                    </LinearLayout>
+                    
+                    <LinearLayout 
+                    	android:id="@+id/login_uly"
+                     	android:layout_width="fill_parent" 
+                     	android:layout_height="wrap_content"
+                     	android:layout_marginLeft="10dip"
+                     	android:layout_marginBottom="10dip">
+                        <TextView  
+	                         android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="2"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="医师姓名" />
+                        <TextView  
+                             android:layout_width="fill_parent" 
+	                         android:layout_height="wrap_content" 
+	                         android:layout_weight="1"
+	                         android:textSize="@dimen/text_size_16" 
+	                         android:textColor="#ff000000" 
+	                         android:text="------" />
+                    </LinearLayout>
+                    
+                </TableLayout>
+                <TableLayout 
+	                android:orientation="vertical" 
+	                android:layout_width="fill_parent" 
+	                android:layout_height="wrap_content" 
+	                android:layout_below="@+id/login_user_table" 
+	                android:layout_alignLeft="@+id/login_user_table" 
+	                android:layout_alignRight="@+id/login_user_table"
+	                android:stretchColumns="0,2" >
+                    
+                    <LinearLayout 
+                        android:orientation="horizontal"
+	                    android:layout_width="fill_parent" 
+	                    android:layout_height="wrap_content" 
+	                    android:layout_marginTop="5.0dip">
+                        <Button 
+                            android:layout_weight="1"
+	                        android:id="@+id/btn_appointment" 
+	                        android:layout_width="fill_parent" 
+	                        android:layout_height="30dp" 
+	                        android:textSize="@dimen/text_size_15"
+	                        android:text="预约" 
+	                        android:gravity="center"
+	                        android:background="@drawable/login_btn_selector" />
+                        <Button 
+                            android:layout_weight="1"
+	                        android:id="@+id/btn_cancel" 
+	                        android:layout_width="fill_parent" 
+	                        android:layout_height="30dp" 
+	                        android:textSize="@dimen/text_size_15"
+	                        android:text="取消" 
+	                        android:gravity="center"
+	                        android:background="@drawable/login_btn_selector" />
+                    </LinearLayout>
+                </TableLayout>
+            </RelativeLayout>
+        </ViewSwitcher>
+    </ScrollView>
+    <ImageButton 
+	    android:id="@+id/login_close_button" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/login_scrollview" 
+	    android:layout_alignTop="@+id/login_scrollview"
+	    android:background="@drawable/login_close_button"  />
+</RelativeLayout>

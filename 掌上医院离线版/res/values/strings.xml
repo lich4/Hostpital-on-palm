@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">掌上医院</string>
+    <string name="navigation_drawer_open">打开导航菜单</string>
+    <string name="navigation_drawer_close">关闭导航菜单</string>
+    <string name="zhu1">* 注1：此排班来自院内系统，若此排班与专家列表中的排班不符，以此排班为准。</string>
+    <string name="zhu2">* 注2：科室中标注了“河西”或"妇幼"的为妇幼分院门诊(江东北路368号)，科室中标注了“医大门诊”的为生殖中心医大门诊(永庆村16号)，科室中标注了“二院院区”的为二院院区门诊(钟阜路1-1号)，其余为本部门诊(广州路300号)。</string>
+    <string name="sharewords">就诊助手患者版是江苏省人民医院专用的手机挂号软件，预约挂号、就诊导航、电子病历等就医功能等你体验</string>
+    <string name="description">江苏省人民医院就诊助手是一款集就诊导航、预约挂号、智能分诊、电子病历等于一身的智能手机就诊软件</string>
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:layout_weight="1">
+
+        <ToggleButton 
+            android:id="@+id/gender"
+		    android:layout_width="40dip"
+		    android:layout_height="20dip"
+		    android:layout_margin="10dip"
+		    android:textOn=""
+		    android:textOff=""
+		    android:background="@drawable/sex_man"/>
+        
+		<ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/man_back" />
+
+        <Button
+            android:id="@+id/tunbu"
+            android:layout_width="80dip"
+            android:layout_height="40dip"
+            android:layout_centerInParent="true"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/xiazhi"
+            android:layout_width="80dip"
+            android:layout_height="160dip"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tunbu"
+            android:layout_centerHorizontal="true"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/beibu"
+            android:layout_width="70dip"
+            android:layout_height="80dip"
+            android:layout_above="@+id/yaobu"
+            android:layout_centerHorizontal="true"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/jingbu"
+            android:layout_width="30dip"
+            android:layout_height="20dip"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/beibu"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/toubu"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_above="@+id/jingbu"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null" />
+        
+        <Button
+            android:id="@+id/zuoshangzhi"
+            android:layout_width="60dip"
+            android:layout_height="180dip"
+            android:layout_alignTop="@id/beibu"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/beibu"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/youshangzhi"
+            android:layout_width="60dip"
+            android:layout_height="180dip"
+            android:layout_alignTop="@id/beibu"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/beibu"
+            android:background="@null" />
+
+        <Button
+            android:id="@+id/yaobu"
+            android:layout_width="70dip"
+            android:layout_height="30dip"
+            android:layout_above="@+id/tunbu"
+            android:layout_toRightOf="@+id/zuoshangzhi"
+            android:background="@null" />
+        
+         <ImageButton
+            android:id="@+id/turnaroundright"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/youshangzhi"
+            android:background="@drawable/arrows" />
+
+        <ImageButton
+            android:id="@+id/turnaroundleft"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/zuoshangzhi"
+            android:background="@drawable/arrows" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

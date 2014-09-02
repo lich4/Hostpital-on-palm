@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:orientation="vertical" 
+   	android:layout_width="fill_parent" 
+   	android:layout_height="fill_parent">
+   	<LinearLayout 
+		android:layout_width="fill_parent" 
+   		android:layout_height="35.0dip" 
+   		android:orientation="horizontal" 
+   		android:gravity="center_vertical">
+       	<Button 
+	        android:id="@+id/jiuyiliucheng"
+			style="@style/frame_button"
+         	android:text="就医流程"/>
+       	<ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/frame_button_cutline"/>
+		<Button 
+			android:id="@+id/guahaoyindao"
+			style="@style/frame_button"
+         	android:text="挂号引导"/>
+		<ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:background="@drawable/frame_button_cutline"/>
+		<Button 
+			android:id="@+id/yiyuanditu"
+			style="@style/frame_button"
+         	android:text="医院地图"/>
+	</LinearLayout>
+	
+</LinearLayout>

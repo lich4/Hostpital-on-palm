@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/doctor_name" 
+			android:textSize="15.0sp" 
+			android:layout_width="fill_parent" 
+			android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:text="崔学范" />
+        
+        <TextView 
+            android:id="@+id/doctor_keshi" 
+			android:textSize="15.0sp" 
+			android:layout_width="fill_parent" 
+			android:layout_weight="1"
+			android:layout_height="wrap_content" 
+			android:text="呼吸内科" />
+        
+    </LinearLayout>
+    
+	<ListView
+	    android:id="@+id/doctor_onduty"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"        
+       	/>
+
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zhu1"/>
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/zhu2"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

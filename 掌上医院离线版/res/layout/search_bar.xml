@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center" 
+    android:orientation="horizontal" 
+    android:id="@+id/search_bar" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:baselineAligned="false">
+    
+    <FrameLayout 
+        android:gravity="center" 
+        android:id="@+id/search_category_container" 
+        android:focusable="true" 
+        android:clickable="true" 
+        android:layout_width="40.0dip" 
+        android:layout_height="fill_parent">
+        
+        <ImageView 
+            android:layout_gravity="center" 
+            android:id="@+id/search_category" 
+            android:layout_width="40dip" 
+            android:layout_height="40dip" 
+            android:padding="10dip"
+            android:src="@drawable/search_all"/>
+        
+    </FrameLayout>
+    
+    <RelativeLayout 
+        android:layout_width="0.0dip" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1.0">
+        
+		<AutoCompleteTextView
+            android:textSize="14.0dip" 
+            android:textColor="#FFFFFF" 
+            android:gravity="left|center" 
+            android:id="@+id/edittext_search_bar" 
+            android:background="@drawable/toolbar_search_input_bar" 
+            android:paddingLeft="8.0dip" 
+            android:hint="请输入关键词"
+		    android:textColorHint="#FFFFFF"
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:singleLine="true" 
+            android:inputType="text" 
+            android:imeOptions="actionSearch" />
+        
+        <ProgressBar 
+            android:id="@+id/search_progress" 
+            android:visibility="gone"
+            android:layout_width="20.0dip" 
+            android:layout_height="20.0dip" 
+            android:layout_alignRight="@id/edittext_search_bar" 
+            android:layout_centerVertical="true" 
+            style="@style/ProgressBar" />
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/search_web_container"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background_globle_buttons"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/search_web"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:padding="10dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/toolbar_websearch"/>
+    </LinearLayout>
+    
+</LinearLayout>

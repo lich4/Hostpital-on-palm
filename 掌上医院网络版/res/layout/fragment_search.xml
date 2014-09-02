@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_relativelayout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_weight="0"
+        android:background="@drawable/widget_head_bg" >
+
+        <ImageButton
+            android:id="@+id/search_searchbutton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/frame_icon_search" />
+
+        <cn.edu.nju.zsyy.controls.FontyEditText
+            android:id="@+id/search_searchstring"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/search_searchbutton"
+            android:hint="请输入关键词" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#44FF0000"
+        android:orientation="vertical" >
+
+        <cn.edu.nju.zsyy.controls.FontyTextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="搜索结果"
+            android:textColor="@color/black" />
+
+        <cn.edu.nju.zsyy.controls.PullToRefreshListView
+            android:id="@+id/search_result"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/main_relativelayout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_weight="0"
+        android:background="@color/themecolor" >
+
+        <ImageView
+	    	android:id="@+id/back"
+	  		android:layout_width="40dip"
+			android:layout_height="40dip"
+			android:padding="10dip"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:scaleType="fitXY"
+			android:src="@drawable/back"/>
+
+        <LinearLayout 
+	        android:gravity="center_vertical" 
+	        android:orientation="horizontal" 
+	        android:id="@+id/search_bar_top"  
+	        android:layout_width="fill_parent" 
+	        android:layout_height="40dip"
+	        android:layout_toRightOf="@id/back">
+        
+			<include 
+			    android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent"
+			    layout="@layout/search_bar"/>
+	
+		</LinearLayout>
+			
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <ViewSwitcher 
+        	android:id="@+id/logindialog_view_switcher" 
+        	android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+            android:layout_weight="1">
+        
+	        <ListView
+	            android:id="@+id/search_result"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"/>
+	        
+	        <View 
+	            android:id="@+id/login_loading" 
+	            android:layout_width="60.0dip" 
+	            android:layout_height="60.0dip"
+	            android:layout_gravity="center" 
+	            android:background="@anim/loading"/>
+        
+		</ViewSwitcher>
+	        
+    </LinearLayout>
+
+</LinearLayout>

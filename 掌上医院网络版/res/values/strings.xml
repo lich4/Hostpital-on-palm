@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">掌上医院</string>
+    <string name="navigation_drawer_open">打开导航菜单</string>
+    <string name="navigation_drawer_close">关闭导航菜单</string>
+    <string name="zhu1">* 注1：此排班来自院内系统，若此排班与专家列表中的排班不符，以此排班为准。</string>
+    <string name="zhu2">* 注2：科室中标注了“河西”或"妇幼"的为妇幼分院门诊(江东北路368号)，科室中标注了“医大门诊”的为生殖中心医大门诊(永庆村16号)，科室中标注了“二院院区”的为二院院区门诊(钟阜路1-1号)，其余为本部门诊(广州路300号)。</string>
+    
+</resources>
